@@ -13,6 +13,6 @@ const jsonString = `{
     ]
    }`;
   
-  const objectJSON = JSON.parse(jsonString);
+  const jsonObject = JSON.parse(jsonString);
   
-  console.log(objectJSON);
+  console.log(jsonObject);
