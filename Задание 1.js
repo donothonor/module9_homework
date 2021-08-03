@@ -29,21 +29,18 @@ const secondNodes = listNode.querySelectorAll("second");
 const ageNodes = listNode.querySelectorAll("age");
 const profNodes = listNode.querySelectorAll("prof");
 
-console.log(nameNodes);
+let list = [];
+
+studentNodes.forEach((item, index) => {
+  list.push({
+    name: `${firstNodes[index].textContent} ${secondNodes[index].textContent}`,
+    age: Number(ageNodes[index].textContent),
+    prof: profNodes[index].textContent,
+    lang: nameNodes[index].getAttribute("lang")
+  });
+});
 
 const result = {
-  list :[
-    {
-      name: firstNodes[0].textContent + " " + secondNodes[0].textContent,
-      age: parseInt(ageNodes[0].textContent),
-      prof: profNodes[0].textContent,
-      lang: nameNodes[0].getAttribute("lang")
-    },
-    {
-      name: firstNodes[1].textContent + " " + secondNodes[1].textContent,
-      age: parseInt(ageNodes[1].textContent),
-      prof: profNodes[1].textContent,
-      lang: nameNodes[1].getAttribute("lang")
-    }
-  ]
+  list: list
 };
+
