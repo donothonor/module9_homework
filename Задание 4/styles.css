@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+  }
+  #app {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .inputs {
+    margin-top: 55px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn {
+  }
+  .result {
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+  }
+  .btn-box {
+    margin-bottom: 55px;
+    text-align: center;
+  }
+  .img-box {
+    text-align: center;
+  }
+  
