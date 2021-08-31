@@ -43,4 +43,3 @@ studentNodes.forEach((item, index) => {
 const result = {
   list: list
 };
-
