@@ -9,7 +9,8 @@ btn.addEventListener("click", () => {
   } else if (imgHeight.value > 300 || imgHeight.value < 100) {
     result.innerText = "Одно из чисел не попадает в диапозон от 100 до 300";
   } else {
-    fetch(`https://picsum.photos/${imgWidth.value}/${imgHeight.value}`).then(
+    fetch(`https://picsum.photos/${imgWidth.value}/${imgHeight.value}`)
+    .then(
       (response) => {
         result.innerHTML = `<div class="img-box"> <img width="${imgWidth.value}" heigth="${imgHeight.value}" src="${response.url}" alt="" "> </div>`;
       }

@@ -46,3 +46,6 @@ function displayResult(apiData) {
 
   resultNode.innerHTML = cards;
 }
+
+
+
